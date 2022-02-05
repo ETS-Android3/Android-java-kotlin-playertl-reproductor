@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--"DEFECTO","CLASICO","RETRO", "MODERNO" -->
+
+    <!--
+    Copia de seguridad
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    -->
+    <color name="colorRojo">#ff0000</color>
+    <color name="colorBlanco">#ffffff</color>
+    <color name="colorNegro">#000000</color>
+    <!--Defecto-->
+    <color name="colorPrimaryDefecto">#008577</color>
+    <color name="colorPrimaryDarkDefecto">#D32F2F</color>
+    <color name="colorAccentDefecto">#D81B60</color>
+    <color name="colorTextDefecto">#FF1F2755</color>
+    <color name="colorFondoDefecto">#FFABE6EE</color>
+    <!--Clásico-->
+    <color name="colorPrimaryClasico">#9E9E9E</color>
+    <color name="colorPrimaryDarkClasico">#949292</color>
+    <color name="colorAccentClasico">#FF5722</color>
+    <color name="colorTextClasico">#212121</color>
+    <color name="colorFondoClasico">#FF8B8888</color>
+    <!--Retro-->
+    <color name="colorPrimaryRetro">#FFEB3B</color>
+    <color name="colorPrimaryDarkRetro">#FBC02D</color>
+    <color name="colorAccentRetro">#FF5722</color>
+    <color name="colorTextRetro">#b08d01</color>
+    <color name="colorFondoRetro">#FFEB3B</color>
+    <!--Moderno-->
+    <color name="colorPrimaryModerno">#ffffff</color>
+    <color name="colorPrimaryDarkModerno">#D32F2F</color>
+    <color name="colorAccentModerno">#FF5722</color>
+    <color name="colorTextModerno">#FFE91E63</color>
+    <color name="colorFondoModerno">#FFFFFF</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

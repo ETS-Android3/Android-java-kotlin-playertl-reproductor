@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Player list TL</string>
+
+
+    <string name="icon_home">Home</string>
+    <string name="icon_sd_card">SD card</string>
+    <string name="icon_search_files_phnoe">Search files</string>
+</resources>

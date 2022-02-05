@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ExplorerFilesActivity"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButtonDirectorioAnteriorExplorerFilesActivity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/anterior_imagen25x25"></ImageButton>
+        <TextView
+            android:id="@+id/textViewExplorerFilesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <GridView
+            android:id="@+id/gridViwewExplorerFilesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:numColumns="3"
+            android:layout_marginHorizontal="20dp"
+            android:foregroundGravity="center"
+            android:focusableInTouchMode="false"/>
+<!--
+android:columnWidth="90dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit"
+-->
+</LinearLayout>

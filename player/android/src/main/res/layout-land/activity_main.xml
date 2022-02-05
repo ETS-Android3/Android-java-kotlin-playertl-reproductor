@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activities.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+         />
+    <!--Creamos una columna donde mentemos dos columnas verticales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+
+        >
+
+        <!--Los estilos -->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+            <!-- En la columna de la derecha le metemos el nombre , el seekbar y los mandos, los estiloslos ocultamos-->
+            <!-- Estilos-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonAnteriorEstilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/anterior_imagen25x25"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewEstilo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/radio_clasica"
+                     />
+
+                <ImageButton
+
+                    android:id="@+id/imageButtonSiguienteEstilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/siguiente_imagen25x25"
+                     />
+            </LinearLayout>
+            <!-- Nombre cancion y estado-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEstadoActivityMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textViewCacionActivaActivityMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Selecciona una canción" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutbotonesReproductor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00BCD4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonAnterior"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/anterior" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonRetroceder"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/retroceder" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPlay"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/play2" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPause"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/pausa2" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonStop"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/stop2" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonAdelantar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/adelantar" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSiguiente"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/siguiente" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchReproducirSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:text="Reproducir siguiente"
+                android:textColor="@color/colorPrimaryDarkClasico" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <SeekBar
+                    android:id="@+id/seekBarMainActivity"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewDuracionCacionActivaActivityMain"
+                    android:layout_marginVertical="20dp"
+
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+
+        <!-- En el otro linear layout está la lista-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonBorrarLista"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menos" />
+
+            <Spinner
+                android:id="@+id/spinnerListaActiva"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:tooltipText="Selecciona una lista" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAgregarLista"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mas" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listViewListaCancionesActivityMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

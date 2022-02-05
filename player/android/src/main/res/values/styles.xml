@@ -1,0 +1,84 @@
+<resources>
+    <!--"DEFECTO","CLASICO","RETRO", "MODERNO" -->
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+
+        <!--
+        <item name="colorPrimary">@color/colorPrimaryDefecto</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDefecto</item>
+        <item name="colorAccent">@color/colorAccentDefecto</item>
+        -->
+
+
+
+
+        <item name="colorPrimary">@color/colorPrimaryDefecto</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDefecto</item>
+        <item name="colorAccent">@color/colorAccentDefecto</item>
+
+    </style>
+
+
+    <style name="AppTheme.defecto">
+       <!-- <item name="estiloDefecto">@style/defecto</item>-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextDefecto</item>
+        <item name="android:textStyle">normal</item>
+
+
+        <item name="colorPrimary">@color/colorPrimaryDefecto</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDefecto</item>
+        <item name="colorAccent">@color/colorAccentDefecto</item>
+        <item name="android:windowBackground">@color/colorFondoDefecto</item>
+
+    </style>
+
+    <style name="AppTheme.clasico">
+        <!--<item name="estiloClasico">@style/clasico</item>-->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextClasico</item>
+        <item name="android:textStyle">bold</item>
+
+
+        <item name="colorPrimary">@color/colorTextClasico</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkClasico</item>
+        <item name="colorAccent">@color/colorAccentClasico</item>
+        <item name="android:windowBackground">@color/colorFondoClasico</item>
+    </style>
+
+    <style name="AppTheme.retro">
+        <!--<item name="estiloRetro">@style/Retro</item>-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextRetro</item>
+        <!--<item name="android:textStyle">bold</item>-->
+
+        <!--colorPrimary es el color de fondo del toolbar -->
+        <item name="colorPrimary">@color/colorBlanco</item>
+        <!-- colorPrimaryDark es el color de fondo de la barra de estado y notificaciones -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRetro</item>
+        <item name="colorAccent">@color/colorAccentRetro</item>
+        <!-- textColorPrimary es el color del texto del toolbar-->
+        <item name="android:textColorPrimary">@color/colorNegro</item>
+        <!-- windowBackground es el color de fondo -->
+        <item name="android:windowBackground">@color/colorFondoRetro</item>
+    </style>
+
+    <style name="AppTheme.moderno">
+        <!--<item name="estiloModerno">@style/moderno</item>-->
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorTextModerno</item>
+        <item name="android:textStyle">italic</item>
+
+
+        <item name="colorPrimary">@color/colorTextModerno</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkModerno</item>
+        <item name="colorAccent">@color/colorAccentModerno</item>
+        <item name="android:windowBackground">@color/colorFondoModerno</item>
+    </style>
+</resources>
